@@ -34,7 +34,7 @@ export async function createInvoice(prevState: State, formData: FormData) {
     amount: formData.get("amount"),
     status: formData.get("status"),
   });
-  console.log(validateFields, "+++++++++++++++++++++");
+  console.log(validateFields, "+++++++++++++++++++++");    
   if (!validateFields.success) {
     return {
       errors: validateFields.error.flatten().fieldErrors,

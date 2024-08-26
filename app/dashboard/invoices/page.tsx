@@ -16,7 +16,7 @@ export default async function Page({
 }: {
   searchParams: {
     query?: string;
-    page?: string;
+    page?: number;
   };
 }) {
   const query = searchParams?.query || "";
